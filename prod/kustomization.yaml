@@ -1,0 +1,6 @@
+commonLabels:
+        app: prod
+bases:
+        - ../bases
+patchesStrategicMerge:
+        - prod.yaml
