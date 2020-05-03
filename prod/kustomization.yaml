@@ -1,4 +1,0 @@
-commonLabels:
-        app: nginxtesting
-resources:
-        - deployment.yaml
