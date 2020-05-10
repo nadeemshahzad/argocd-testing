@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+        name: argocd-cm
+        namespace: argocd
+        labels:
+                app.kubernetes.io/name: argocd-cm
+                app.kubernetes.io/part-of: argocd
+data:
+        repositories: |
+                - url: git@github.com:nadeemshahzad/argocd-testing.git
+                  sshPrivateKeySecret: 
+                       name: privatekey
+                       key: MIIEowIBAAKCAQEAvbL74dT7XsAb/EQz3FoetzCqz05TgmSJXhLDJqSydCrTtJgkV7M2i1PYYdfqGmO0yX4GW2B4r0WlcCj9Pb3zievz1I28tv+zB+XF7b2hY+6j6KVlKZ+TpKMF0yI1AGk2xds7BXzBMPH0swxERvp5lBxPsrMMyKZlvbWyhKZFDJdqpHdjSuzHukEIq7p+pv7BuNHpSnC1jomkYygR15GDXHqccbihRkgqN0wGa1WRbArjBMGa/ItsfMZVqmYx+UUltmZEvBrgAYClJLlyzZ/RvpAMeQsvqu8TRtHz54kOQVUfjk4yA7Ii1s0e6ACTn8DsdMnBTcw4rQquoIDPBFcdBwIDAQABAoIBAAuw5zMg1Ckfv9nJPkT7TN9PYYeLNTxZA9pHX72W8uST6x47Lio1gkwN680D6Iqd0HuGh8/D30w2B58k946BkWvTneBgp9vDYH5BG/St9i9ZesKQxu5MxmWkImzDs+6FjXmeLEIHUUS59LHANMkHEM0e/Y5u2H/ZOXX6p7jjImhHJVQ6ScbXTYE0lea3EQN8bbx9+4h1g2s+air/P0gdE+G2X5WNjBKI5AO0hoRasqjQrL8XSueyJnNKa0msfgPlTSnERj52q5Ay/hocPLFXwLNJxND1TzzODqHRPYniYvvBkimMtc7Cqm3g6wv+dfQzFjhtIKFLOH6VdMBb+8d2WKkCgYEA91s8JQjNhns2WU7J88lxxOuVepO2kC9vLAixpifF+eL8CoOPfhGNx7HytbLAcC15Wg2OcbENMOAEdzFP+KwAaqiI4JL8nCEit6LERv5ANrvak021eBDTVGEkTiJJsmbCZqFbfPwIU4n6iMXdpYz7oM0r7ll9RVVLgit9lRFOm6MCgYEAxFP3nUJ/UfJoOulE/AfcpQXKaBgUODYbE+4dy39ZMjX59L9gXfS27WqhfkziAupQBpqIaQ7VP0KzILOJ+qfifByKrVHxEnJdJek/uIt2jAzBw0e41ZMN5pUQgD2NIw3w2Y9HC8UlRBQjFhty/BovDbKvsbcnehr3b4bnM+ZZT00CgYACNjSheCSuUSe5QLUZkvGLezfI8s0tGN97m1BLVgu1Ikxyo56C2BFWecbbzQ9fcWimX3yok5a0mywvDKfUZ2VRjtQ6fdX4Z2tyDOiIYfmdA6z+qDE5M51QIdY7RJ84Eycl18eDpJVGefNdibdjpZESbQM5jF9MYWjdbxoeXRtA1QKBgARVskbnm/YMOx7p3ZsO9WEzYoev2GpxT2G+RSwkEK0aIf20aAVLDOrrCsvGGMtlrwSmTtK7ABxYdaoILMi7AjYpTyqKf58fpUzb/IsvkRuAgJq2L6+PgqQPsICUW1Rlz2aOUkxBOxRouWmYi45jaZyM0HJFD/sTM1lkCiDMOjaVAoGBAKIw8hjpE9PphLZdRg9VKLoUXa+Iljs5glKKmy0O6Jj6P9rDdcLXv4FpBhXDUyY15AK+VGuq/YTcyM2nHRrkqtH4ezq00w+4y7EE83NG39eLD2GMKfOjVPZsdLt7oOBQsNj9G/uEP3c3/pm/Ae+F+rCHWpyawe+2jk/FfhKgrvgM
