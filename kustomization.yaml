@@ -1,2 +1,4 @@
+resources:
+        - ns.yaml
 bases: 
  - ./base
